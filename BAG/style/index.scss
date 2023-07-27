@@ -1,0 +1,353 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+:root{
+    --black:#2f2f2f;
+    --white:#fff;
+    --mor:#550086;
+    --hovermor:#8705d1;
+    --acikmor:#d9c8e3;
+    --sari:#ffcc00;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+   
+     
+}
+.menü{
+    background-color:var(--white);
+    height: 80px;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    // border-bottom: 0.1px solid var(--mor);
+    box-shadow: 0 0 1px var(--mor);
+    margin-bottom: 20px;
+    img{
+        height: 100%;
+        cursor: pointer;
+    }
+    .logo2{
+        display: none; 
+    }
+    .right{
+        display: flex;
+        align-items: center;
+        a{
+            margin-left: 15px;
+            text-decoration:none;
+            color:var(--mor);
+            font-size: 1.5rem;
+            padding:10px;
+            cursor: pointer;
+            &:hover{
+                color: var(--hovermor);
+            }
+        }
+        .sepet{
+            display: flex;
+            align-items: center;
+            position: relative;
+            .adet{
+                display: block;
+                color:var(--mor);
+                background-color:var(--sari);
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                font-size: 15px;
+                font-weight: 700;
+                position: absolute;
+                top: 0px;
+                right:0px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.slayt{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    .dots{
+        
+        margin: 0;
+        position: absolute;
+        z-index: 4;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 10px;
+        font-size: 3rem;
+        font-weight: 500;
+       .dot{
+        margin: 10px;
+       width: 20px;
+       height: 20px;
+       border-radius: 50%;
+       background-color: rgba(255, 255, 255, 0.372);
+        &:hover{
+            background-color: rgb(255, 255, 255);
+           
+        }
+       }
+       .active{
+        background-color: white;
+       }
+    }
+    .image{
+        width: 100%;
+        height: 100%;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: none;
+            // object-fit: cover;
+        }
+        .active{
+            display: block;
+        }
+    }
+    
+}
+
+.secKapsam{
+    border-radius: 20px;
+    margin: auto;
+    width: 90%;
+    height: 50px;
+    background-color: var(--acikmor);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   .secenek{
+    width: 40%;
+        #cantalar{
+           width: 100%;
+           border: none;
+           height: 30px;
+           border-radius: 5px;
+        }
+   }
+   .arama{
+    width: 50%;
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+        input{
+            width: 100%;
+            border:none;
+            border-radius: 5px;
+            height: 30px;
+           
+        }
+        input[type="text"]:focus{
+            border:none;
+            padding-left: 5px;
+           
+          }
+        i{ 
+            color:var(--acikmor);
+            height: 20px;
+            width: 20px;
+            font-size: 15px;
+           margin: auto;
+        }
+   }
+
+   
+}
+
+.katalog{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:1rem;
+   
+    .card{
+        
+        box-shadow: 0 0 10px var(--acikmor);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:250px;
+     .urunfoto{
+         
+            width: 100%;
+            height: 300px;
+            display: flex;
+             justify-content: center;
+             align-items: center;
+            
+            img{
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+              
+            }
+        }
+        .urunbilgi{
+            // position: relative;
+            // bottom: 0px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            span{
+                margin: 5px;
+                font-weight: 700;
+                color: var(--hovermor);
+                text-align: center;
+               
+            }
+            .urunfiyat{
+                color: black;
+                font-size: 1.5rem;
+            }
+            button{
+                border: none;
+                background-color: var(--mor);
+                color: white;
+                font-weight: 700;
+                height: 30px;
+                width: 100%;
+                padding: 5px;
+                
+
+                &:hover{
+                    box-shadow:0 0 10px  var(--hovermor);
+                }
+            }
+        }
+    }
+}
+
+.bildiri{
+    position: fixed;
+    display: none;
+    z-index: 999;
+    right: 0;
+    bottom: 0;
+    margin:20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: green;
+    background-color:rgb(145, 228, 145);
+    // border: 1px solid green;
+    box-shadow: 0px 0px 8px rgb(41, 255, 41);
+    transition: 1sn linear ;
+}
+
+.sepetim{
+    position: absolute;
+    z-index: 10;
+    top:80px;
+    right: 0px;
+    background-color:whitesmoke;
+    width: 50%;
+    color: rgb(105, 105, 105);
+    display: flex;
+    flex-direction: column;
+    display: block;
+    
+    
+    .box{
+        margin: auto;
+        height: 150px;
+        width: 90%;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.485);
+        .sepetfoto{
+            height: 100px;
+            width: 100px;
+            img{
+                height: 100px;
+                width: 100px;
+            }
+        }
+        .sepeturunbil{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100px;
+            .sepetadet{
+                font-weight:700;
+            }
+            .sepettensil{
+                color: red;
+                cursor: pointer;
+            }
+        }
+        .sepetucret{
+            font-weight: 700;
+            font-size: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            :nth-child(2){
+                font-size: 10px;
+                font-weight: 100;
+                text-align: center;
+            }
+        }
+    }
+
+    .tutarbox{
+        margin:auto;
+        padding: 10px;
+        right: 0px;
+        width: 75%;
+        border-top: 1px solid var(--mor);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 1.5rem;
+        .tutar{
+            margin: 5px;
+        }
+        .öde{
+            margin: 5px;
+            padding: 15px 20px;
+            border: none;
+            background-color: var(--sari);
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+    }
+}
+.sptactive{
+    display: block;
+}
+
+
+@media (max-width: 450px) {
+    .menü{
+        .logo{
+            .logo1{
+                display: none;
+            }
+            .logo2{
+                display: block;
+            }
+    }}
+}
+@media (max-width: 600px) {
+   .sepetim{
+    width: 100%;
+   }
+}

@@ -1,0 +1,23 @@
+[
+    {"id":"1","urunisim":"Gold Abiye Çanta lorem impus","urunfiyat":250,"kategori":"AbiyeÇanta","src":"./img/abiyeçanta1.jpeg"},
+    {"id":"2","urunisim":"Kırmızı zincir Askılı Abiye Çanta","urunfiyat":500,"kategori":"AbiyeÇanta","src":"./img/abiyeçanta2.png"},
+    {"id":"3","urunisim":"Siyah Zincir Askılı Abiye Çanta","urunfiyat":500,"kategori":"AbiyeÇanta","src":"./img/abiyeçanta3.png"},
+    {"id":"4","urunisim":"Bej Kulplu Zincir Askılı Abiye Çanta","urunfiyat":750,"kategori":"AbiyeÇanta","src":"./img/abiyeçanta4.jpeg"},
+    {"id":"5","urunisim":"Küçük Boy Siyah Tekerlek Bavul","urunfiyat":800,"kategori":"Bavul","src":"./img/bavul1.jpeg"},
+    {"id":"6","urunisim":"Büyük Boy Kırmızı Kumaş Tekerlek Bavul","urunfiyat":1200,"kategori":"Bavul","src":"./img/bavul2.jpeg"},
+    {"id":"7","urunisim":"Gold şerit Detaylı Büyük Boy kutu Bavul","urunfiyat":1500,"kategori":"Bavul","src":"./img/bavul3.jpeg"},
+    {"id":"8","urunisim":"Mavi Büyük Boy Kutu Bavul","urunfiyat":1400,"kategori":"Bavul","src":"./img/bavul4.jpeg"},
+    {"id":"9","urunisim":"Sarı Büyük Boy Tekerlek Kutu Bavul","urunfiyat":1400,"kategori":"Bavul","src":"./img/bavul5.jpeg"},
+    {"id":"10","urunisim":"Kırmızı Kol Çanta","urunfiyat":120,"kategori":"KolÇanta","src":"./img/kolçanta1.png"},
+    {"id":"11","urunisim":"İşelemeli Bej Kol çanta","urunfiyat":400,"kategori":"KolÇanta","src":"./img/kolçanta2.png"},
+    {"id":"12","urunisim":"Siyah Kol Çanta","urunfiyat":200,"kategori":"KolÇanta","src":"./img/kolçanta3.png"},
+    {"id":"13","urunisim":"Siyah Sırt Laptop Çanta","urunfiyat":600,"kategori":"LaptopÇanta","src":"./img/laptopçanta1.png"},
+    {"id":"14","urunisim":"Gri Laptop Çanta","urunfiyat":500,"kategori":"LaptopÇanta","src":"./img/laptopçanta2.png"},
+    {"id":"15","urunisim":"Siyah Laptop Çanta","urunfiyat":500,"kategori":"LaptopÇanta","src":"./img/laptopçanta3.jpg"},
+    {"id":"16","urunisim":"Pembe Makyaj Çanta","urunfiyat":80,"kategori":"MakyajÇanta","src":"./img/makyajçanta1.png"},
+    {"id":"17","urunisim":"Katlamalı Siyah Makyaj Çanta","urunfiyat":500,"kategori":"MakyajÇanta","src":"./img/makyajçanta2.jpeg"},
+    {"id":"18","urunisim":"Mavi Okul Çanta","urunfiyat":700,"kategori":"OkulÇanta","src":"./img/okulçanta1.jpeg"},
+    {"id":"19","urunisim":"Kırmızı 3fermuarlı okul çanta","urunfiyat":750,"kategori":"OkulÇanta","src":"./img/okulçanta2.jpg"},
+    {"id":"20","urunisim":"Siyah okul Çantası","urunfiyat":400,"kategori":"OkulÇanta","src":"./img/okulçanta3.jpeg"},
+    {"id":"21","urunisim":"YeşilOkul Çanta","urunfiyat":750,"kategori":"OkulÇanta","src":"./img/okulçanta4.png"}
+ ]
